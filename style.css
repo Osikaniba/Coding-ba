@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    background-color: white;
+    overflow: hidden;
+   
+}
+
+
+
+
+
+
+
+body{
+
+    height: 100vh;
+ 
+    overflow: hidden;
+}
+
+.container{
+
+    margin: 40px auto;
+    border: 10px solid white;
+    width: 80vw;
+    box-shadow:13px 13px 20px #0000fd,
+    -13px -13px 20px #ad0505;
+    background:#fcfcfc;
+    border-radius: 30px;
+    overflow: hidden;
+height: 90vh;
+margin-top: 13px;
+animation: change 3s infinite alternate ease-in;
+transition:5s ease-in running;
+
+
+}
+
+
+
+
+@keyframes change{
+
+0%{
+
+    box-shadow:13px 13px 20px pink,
+    -13px -13px 20px yellow;
+
+}
+
+30%{
+      
+    box-shadow:13px 13px 20px purple,
+    -13px -13px 20px green;
+
+}
+
+
+40%{
+
+    
+    box-shadow:13px 13px 20px aqua,
+    -13px -13px 20px violet;
+}
+
+100%{
+    
+    box-shadow:13px 13px 20px grey,
+    -13px -13px 20px black;
+}
+
+
+
+}
+
+
+
+
+
+
+
+.input-container{
+
+
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to right,red,blue);
+    border-radius: 10px;
+    animation: changecolor 2s infinite alternate ease-in;
+  transition: 5s background;
+}
+
+@keyframes changecolor{
+
+    0%{
+
+        background-image: linear-gradient(to left,yellow,green);
+    }
+
+    
+    40%{
+
+        background-image: linear-gradient(to left,aqua,purple);
+    }
+
+
+}
+
+
+
+input{
+    border: none;
+ outline: none;
+    border-radius: 10px;
+    margin-top: 10px;
+   box-shadow:  inset 8px 8px 8px #cbced1,
+            inset -8px -8px 8px #ffffff;
+            height: 50px;
+            color:purple;
+            font-size: 25px;
+            font-family: cursive;
+    
+}
+
+button{
+    outline: none;
+     cursor: pointer;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow:9px 9px 20px #565758,
+    -9px -9px 20px #ffffff;
+    color:white;
+  animation: changecolor 2s infinite ;
+   font-family: cursive;
+   background-image: linear-gradient(to right,pink,purple);
+    
+}
+
+
+
+button:focus{
+    outline: none;
+     cursor: pointer;
+    margin-top: 10px;
+    border-radius: 10px;
+   
+    color:white;
+font:bolder;
+   font-family: cursive;
+   background-image: linear-gradient(to right,red,yellow,green);
+    
+}
+
+
+
+
+input::placeholder{
+
+    color: rgb(44, 44, 59);
+    font-size: 25px;
+}
+
+.header h1{
+
+    text-shadow: 3px 2px 2px grey;
+    font: bolder;
+    font-size: 40px;
+    color: purple;
+    font-family: monospace;
+    
+   
+   
+}
+
+.user{
+    font-family: cursive;
+    font-weight: bolder;
+    font-size: 30px;
+    text-shadow: 3px 4px 5px blue;
+    color: rgb(255, 123, 0);
+}
+
+
+.week,.day,.hr,.second,.min{
+
+    font-size: 18px;
+    font-weight: bolder;
+
+}
+
+.content{
+  
+    box-shadow: 10px 10px 10px black,
+    -10px -10px 10px black;
+    margin-top: 15px;
+    animation:  change 4s alternate-reverse infinite;
+  
+}
+
+hr{
+    width: 40px;
+
+    background: blue;
+    animation: move 3s alternate infinite ease-in;
+}
+
+@keyframes move{
+ 
+
+    0%{
+
+        transform: translatex(0px);
+        background: brown;
+        
+    }
+
+    
+    50%{
+
+      
+        transform: translatex(70vw);
+        
+        opacity: 0.1;
+    }
+
+
+
+
+}
